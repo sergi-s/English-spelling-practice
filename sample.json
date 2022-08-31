@@ -1,0 +1,26 @@
+[
+    {
+        "word": "experience",
+        "rightCount": 9,
+        "wrongCount": 1,
+        "asked": 10
+    },
+    {
+        "word": "adequate",
+        "rightCount": 0,
+        "wrongCount": 5,
+        "asked": 5
+    },
+    {
+        "word": "audience",
+        "rightCount": 0,
+        "wrongCount": 1,
+        "asked": 1
+    },
+    {
+        "word": "abandon",
+        "rightCount": 1,
+        "wrongCount": 1,
+        "asked": 2
+    }
+]

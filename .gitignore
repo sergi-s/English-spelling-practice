@@ -1,0 +1,6 @@
+.vscode
+__pycache__
+
+tempCodeRunnerFile.py
+words_alpha.txt
+words.json
