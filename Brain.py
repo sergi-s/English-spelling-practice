@@ -5,6 +5,7 @@ from TextToSpeech import *
 from Colors import bcolors
 from FileManagment import FileManagement
 from functools import cmp_to_key
+import random
 
 
 class Management:
@@ -15,8 +16,8 @@ class Management:
         self.fileName = fileName
         self.fileMang = FileManagement()
         self.language = language
-        # self.soundEngine = PYTTS()
-        self.soundEngine = GTTS()
+        self.soundEngine = PYTTS()
+        # self.soundEngine = GTTS()
 
         self.words = self.fileMang.readFromJson()
 
@@ -33,7 +34,9 @@ class Management:
         else:
             print(f"{bcolors.FAIL}{bcolors.BOLD}\nsad\n{bcolors.ENDC}")
 
-            print(f"{bcolors.OKGREEN}{bcolors.BOLD}\n{word.word} != {bcolors.WARNING}{userInput}\n{bcolors.ENDC}")
+            print(
+                f"{bcolors.OKGREEN}{bcolors.BOLD}\n{word.word} != {bcolors.WARNING}{userInput}\n{bcolors.ENDC}"
+            )
             word.wrongCount += 1
         word.asked += 1
 
@@ -58,7 +61,10 @@ class Management:
             #     print(word.word + ": " + str(word.getPercentage()), end="\t")
             # print()
 
-            self.processWord(temp[0])
+            if bool(random.getrandbits(1)):
+                self.processWord(temp[0])
+            else:
+                self.processWord(random.choice(temp))
 
     # --------------------------------------------------------------------------------
     def mainSystemLoop(self):
@@ -89,13 +95,6 @@ class Management:
 
 
 def cmp(word1, word2):
-    # print(
-    #     "========="
-    #     + str(word1.getPercentage())
-    #     + " vs "
-    #     + str(word2.getPercentage())
-    #     + "=========="
-    # )
     if word1.getPercentage() < word2.getPercentage():
         return -1
     elif word1.getPercentage() > word2.getPercentage():
