@@ -14,8 +14,13 @@ class GTTS(TextToSpeech):
 
     def sayWord(self, word):
         mySound = gTTS(text=word, lang=self.language, slow=False)
-        mySound.save("welcome.mp3")
-        os.system("start welcome.mp3")
+        mySound.save("audio/welcome.mp3")
+        cmdStr = ""
+        if os.name == "posix":
+            cmdStr = "play audio/welcome.mp3"
+        else:
+            cmdStr = "start audio/welcome.mp3"
+        os.system(cmdStr)
 
 
 class PYTTS(TextToSpeech):

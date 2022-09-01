@@ -9,7 +9,7 @@ class Word:
         if self.asked == 0:
             return 0
         else:
-            return self.wrongCount / self.asked
+            return self.rightCount / self.asked
 
     def __str__(self) -> str:
         retuStr = ""
