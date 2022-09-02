@@ -21,13 +21,13 @@ class Word:
                 self.rightCount,
                 self.wrongCount,
                 (self.rightCount / self.asked * 100),
-                cyan = Colors.bcolors.OKCYAN,
-                green = Colors.bcolors.OKGREEN,
-                red = Colors.bcolors.FAIL,
-                yellow = Colors.bcolors.WARNING,
-                end = Colors.bcolors.ENDC
+                cyan=Colors.bcolors.OKCYAN,
+                green=Colors.bcolors.OKGREEN,
+                red=Colors.bcolors.FAIL,
+                yellow=Colors.bcolors.WARNING,
+                end=Colors.bcolors.ENDC,
             )
         else:
-            retuStr = "\t Did ask you yet"
+            retuStr = f"\t {Colors.bcolors.WARNING}Did ask you yet{Colors.bcolors.ENDC}"
 
         return "Word: " + self.word + retuStr
