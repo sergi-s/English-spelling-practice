@@ -1,3 +1,4 @@
+import Colors
 class Word:
     def __init__(self, word, rightCount=0, wrongCount=0, asked=0) -> None:
         self.word = word.lower().strip()
@@ -15,11 +16,16 @@ class Word:
         retuStr = ""
         if self.asked > 0:
 
-            retuStr = "\n\t I asked {:d} times\n\t you got it {:d} times right and {:d} times wrong \n\t averaging of {:.2f}%".format(
+            retuStr = "\n\t I asked {cyan}{:d} times{end}\t you got it {green}{:d} times right {end} and {red}{:d} times wrong \t {end}averaging of {yellow}{:.2f}% {end}".format(
                 self.asked,
                 self.rightCount,
                 self.wrongCount,
                 (self.rightCount / self.asked * 100),
+                cyan = Colors.bcolors.OKCYAN,
+                green = Colors.bcolors.OKGREEN,
+                red = Colors.bcolors.FAIL,
+                yellow = Colors.bcolors.WARNING,
+                end = Colors.bcolors.ENDC
             )
         else:
             retuStr = "\t Did ask you yet"
