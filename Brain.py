@@ -1,4 +1,6 @@
 from sys import exit
+import os
+import datetime
 
 from Word import Word
 from TextToSpeech import *
@@ -43,7 +45,15 @@ class Management:
     # --------------------------------------------------------------------------------
     def addWord(self):
         word = input("Insert the word\n")
-        self.words.append(Word(word))
+        newWord = Word(word)
+        for savedWord in self.words:
+            if savedWord.word == newWord.word:
+
+                print(f"{bcolors.BOLD}{bcolors.WARNING}Already Exists\n{bcolors.ENDC}")
+
+                continue
+
+        self.words.append(newWord)
         self.fileMang.saveWords(self.words)
 
     # --------------------------------------------------------------------------------
@@ -67,12 +77,31 @@ class Management:
                 self.processWord(random.choice(temp))
 
     # --------------------------------------------------------------------------------
+    def miniReport(self):
+        print(
+            f"Total Number of words Saved = {bcolors.BOLD}{bcolors.WARNING}{len(self.words)}{bcolors.ENDC}"
+        )
+        temp = sorted(self.words, key=cmp_to_key(cmp))
+
+        print("Your worst word is ")
+        [print(word) for word in temp[0:2]]
+
+    # --------------------------------------------------------------------------------
+
     def mainSystemLoop(self):
         choice = input(
-            "Press 1  to start a training session, Press 2 to add a new word, Press 3 to reset score: (1,2,3):\t"
+            "Press 1  to start a training session, Press 2 to add a new word, Press 3 to reset score, Press 4 to clear the console: (1,2,3,4):\t"
         )
 
         match choice:
+            case "5":
+                self.miniReport()
+                self.mainSystemLoop()
+                return
+            case "4":
+                os.system("cls")
+                self.mainSystemLoop()
+                return
             case "3":
                 self.resetScore()
                 self.mainSystemLoop()
@@ -87,6 +116,10 @@ class Management:
 
     # --------------------------------------------------------------------------------
     def resetScore(self):
+        now = str(datetime.datetime.now())
+        newName = f"Archive-{now}.json"
+        newName = newName.replace(":", "-")
+        os.rename("sample.json", newName)
         for word in self.words:
             word.asked = 0
             word.rightCount = 0

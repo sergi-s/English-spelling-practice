@@ -1,518 +1,902 @@
 [
     {
         "word": "experience",
-        "rightCount": 13,
-        "wrongCount": 8,
-        "asked": 21
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "adequate",
-        "rightCount": 4,
-        "wrongCount": 1,
-        "asked": 5
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "audience",
-        "rightCount": 10,
-        "wrongCount": 6,
-        "asked": 16
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "abandon",
-        "rightCount": 1,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 1
+        "asked": 0
     },
     {
         "word": "absence",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "absolutely",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "beautiful",
-        "rightCount": 3,
-        "wrongCount": 2,
-        "asked": 5
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "absorb",
-        "rightCount": 4,
-        "wrongCount": 2,
-        "asked": 6
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "mentor",
-        "rightCount": 1,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 1
+        "asked": 0
     },
     {
         "word": "abundant",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "accessible",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "accompanied",
-        "rightCount": 4,
-        "wrongCount": 1,
-        "asked": 5
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "daughter",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "qualified",
-        "rightCount": 4,
-        "wrongCount": 1,
-        "asked": 5
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "lawyer",
-        "rightCount": 4,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 4
+        "asked": 0
     },
     {
         "word": "accomplishment",
-        "rightCount": 6,
-        "wrongCount": 3,
-        "asked": 9
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "tailors",
-        "rightCount": 3,
-        "wrongCount": 2,
-        "asked": 5
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "measurements",
-        "rightCount": 5,
-        "wrongCount": 1,
-        "asked": 6
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "accurate",
-        "rightCount": 3,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 3
+        "asked": 0
     },
     {
         "word": "beauty pageant",
-        "rightCount": 1,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 1
+        "asked": 0
     },
     {
         "word": "pleasant",
-        "rightCount": 5,
-        "wrongCount": 3,
-        "asked": 8
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "achievement",
-        "rightCount": 10,
-        "wrongCount": 6,
-        "asked": 16
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "owns",
-        "rightCount": 3,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 3
+        "asked": 0
     },
     {
         "word": "acres",
-        "rightCount": 4,
-        "wrongCount": 1,
-        "asked": 5
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "fertile",
-        "rightCount": 8,
-        "wrongCount": 5,
-        "asked": 13
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "adjustable",
-        "rightCount": 4,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 4
+        "asked": 0
     },
     {
         "word": "admit",
-        "rightCount": 4,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 4
+        "asked": 0
     },
     {
         "word": "mistakes",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "admittance",
-        "rightCount": 3,
-        "wrongCount": 1,
-        "asked": 4
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "institution",
-        "rightCount": 3,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 3
+        "asked": 0
     },
     {
         "word": "privilege",
-        "rightCount": 4,
-        "wrongCount": 2,
-        "asked": 6
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "advise",
-        "rightCount": 3,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 3
+        "asked": 0
     },
     {
         "word": "alternate",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "hiker",
-        "rightCount": 1,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 1
+        "asked": 0
     },
     {
         "word": "alternative",
-        "rightCount": 4,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 4
+        "asked": 0
     },
     {
         "word": "enjoyed",
-        "rightCount": 3,
-        "wrongCount": 1,
-        "asked": 4
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "amusement",
-        "rightCount": 3,
-        "wrongCount": 1,
-        "asked": 4
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "solid",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "analyze",
-        "rightCount": 3,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 3
+        "asked": 0
     },
     {
         "word": "portrait",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "ancestors",
-        "rightCount": 5,
-        "wrongCount": 3,
-        "asked": 8
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "fortune",
-        "rightCount": 1,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 1
+        "asked": 0
     },
     {
         "word": "celebrated",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "anniversary",
-        "rightCount": 6,
-        "wrongCount": 1,
-        "asked": 7
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "appreciate",
-        "rightCount": 5,
-        "wrongCount": 3,
-        "asked": 8
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "intelligence",
-        "rightCount": 10,
-        "wrongCount": 6,
-        "asked": 16
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "artificial",
-        "rightCount": 14,
-        "wrongCount": 8,
-        "asked": 22
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "government",
-        "rightCount": 1,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 1
+        "asked": 0
     },
     {
         "word": "association",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "dedicated",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "bullying",
-        "rightCount": 3,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 3
+        "asked": 0
     },
     {
         "word": "athlete",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "gold medal",
-        "rightCount": 3,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 3
+        "asked": 0
     },
     {
         "word": "atmosphere",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "attendance",
-        "rightCount": 1,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 1
+        "asked": 0
     },
     {
         "word": "professor",
-        "rightCount": 5,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 5
+        "asked": 0
     },
     {
         "word": "professor",
-        "rightCount": 4,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 4
+        "asked": 0
     },
     {
         "word": "microbiologists",
-        "rightCount": 3,
-        "wrongCount": 2,
-        "asked": 5
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "bacteria",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "delicious",
-        "rightCount": 7,
-        "wrongCount": 4,
-        "asked": 11
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "baggage",
-        "rightCount": 7,
-        "wrongCount": 4,
-        "asked": 11
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "orphans",
-        "rightCount": 5,
-        "wrongCount": 1,
-        "asked": 6
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "benefited",
-        "rightCount": 11,
-        "wrongCount": 7,
-        "asked": 18
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "neighborhood",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "exercise",
-        "rightCount": 4,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 4
+        "asked": 0
     },
     {
         "word": "bicycle",
-        "rightCount": 3,
-        "wrongCount": 2,
-        "asked": 5
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "toddler",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "soaked",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "biscuit",
-        "rightCount": 5,
-        "wrongCount": 3,
-        "asked": 8
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "surprised",
-        "rightCount": 8,
-        "wrongCount": 5,
-        "asked": 13
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "bizarre",
-        "rightCount": 8,
-        "wrongCount": 5,
-        "asked": 13
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "surprised",
-        "rightCount": 7,
-        "wrongCount": 4,
-        "asked": 11
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "usually",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "disputing",
-        "rightCount": 4,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 4
+        "asked": 0
     },
     {
         "word": "boundary",
-        "rightCount": 5,
-        "wrongCount": 3,
-        "asked": 8
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "received",
-        "rightCount": 8,
-        "wrongCount": 5,
-        "asked": 13
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "bouquet",
-        "rightCount": 3,
-        "wrongCount": 2,
-        "asked": 5
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "tulips",
-        "rightCount": 2,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 2
+        "asked": 0
     },
     {
         "word": "admirer",
-        "rightCount": 4,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 4
+        "asked": 0
     },
     {
         "word": "awesome",
-        "rightCount": 3,
-        "wrongCount": 1,
-        "asked": 4
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "brochure",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "weather bulletin",
-        "rightCount": 7,
-        "wrongCount": 4,
-        "asked": 11
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "dedicated",
-        "rightCount": 4,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 4
+        "asked": 0
     },
     {
         "word": "tedious",
-        "rightCount": 2,
-        "wrongCount": 1,
-        "asked": 3
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "election campaign",
-        "rightCount": 5,
-        "wrongCount": 3,
-        "asked": 8
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     },
     {
         "word": "abbreviation",
-        "rightCount": 3,
+        "rightCount": 0,
         "wrongCount": 0,
-        "asked": 3
+        "asked": 0
+    },
+    {
+        "word": "cancellation",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "flight",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "tears",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "candidate",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "capable",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "independently",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "business",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "investment",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "protestors",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "surrounded",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "vegetable",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "noodles",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "cemetery",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "buried",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "designated",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "strict",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "chaperone",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "cousin",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "cinnamon",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "ingredient",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "civilize",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "indigenous",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "commercial",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "thousands",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "shoppers",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "committe",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "commotion",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "companion",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "completing",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "competent",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "compliment",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "exists",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "boundary",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "concentrate",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "entrance",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "concentration",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "producer",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "showered",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "showered",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "confetti",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "parade",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "congratulations",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "consequently",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "prices",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "culminate",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "finale",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "culprit",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "no one",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "deceive",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "detector",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "democracy",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "deodorant",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "scent",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "descendent",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "philosopher",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "description",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "necklace",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "disgraceful",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "school dismissal",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "distinguished",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "guest",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "disease",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "elementary",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
+    },
+    {
+        "word": "questions",
+        "rightCount": 0,
+        "wrongCount": 0,
+        "asked": 0
     }
 ]
