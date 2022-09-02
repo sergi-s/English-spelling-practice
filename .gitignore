@@ -8,3 +8,4 @@ words.json
 test.py
 *.mp3
 audio
+*.json
