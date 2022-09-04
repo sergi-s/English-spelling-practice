@@ -94,6 +94,10 @@ class Management:
         )
 
         match choice:
+            case "6":
+                while True:
+                    self.addWord()
+                return
             case "5":
                 self.miniReport()
                 self.mainSystemLoop()
