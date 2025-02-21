@@ -93,30 +93,28 @@ class Management:
             "Press 1  to start a training session, Press 2 to add a new word, Press 3 to reset score, Press 4 to clear the console: (1,2,3,4):\t"
         )
 
-        match choice:
-            case "6":
-                while True:
-                    self.addWord()
-                return
-            case "5":
-                self.miniReport()
-                self.mainSystemLoop()
-                return
-            case "4":
-                os.system("cls")
-                self.mainSystemLoop()
-                return
-            case "3":
-                self.resetScore()
-                self.mainSystemLoop()
-                return
-
-            case "2":
+        if choice == "6":
+            while True:
                 self.addWord()
-                self.mainSystemLoop()
-                return
-            case "1":
-                self.wordLoop()
+            return
+        elif choice == "5":
+            self.miniReport()
+            self.mainSystemLoop()
+            return
+        elif choice == "4":
+            os.system("cls")
+            self.mainSystemLoop()
+            return
+        elif choice == "3":
+            self.resetScore()
+            self.mainSystemLoop()
+            return
+        elif choice == "2":
+            self.addWord()
+            self.mainSystemLoop()
+            return
+        elif choice == "1":
+            self.wordLoop()
 
     # --------------------------------------------------------------------------------
     def resetScore(self):

@@ -9,3 +9,5 @@ test.py
 *.mp3
 audio
 *.json
+
+myenv
