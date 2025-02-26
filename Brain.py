@@ -26,21 +26,29 @@ class Management:
     # --------------------------------------------------------------------------------
     def processWord(self, word):
         self.soundEngine.sayWord(word.word)
-        userInput = input("Spell the word\t 'if you want to repeat press `r`'\n\n")
-        if userInput.lower().strip() == "r":
-            self.processWord(word)
-            return
-        if userInput.lower().strip() == word.word:
-            print(f"{bcolors.OKGREEN}{bcolors.BOLD}\n3a4\n{bcolors.ENDC}")
-            word.rightCount += 1
-        else:
-            print(f"{bcolors.FAIL}{bcolors.BOLD}\nsad\n{bcolors.ENDC}")
-
-            print(
-                f"{bcolors.OKGREEN}{bcolors.BOLD}\n{word.word} != {bcolors.WARNING}{userInput}\n{bcolors.ENDC}"
-            )
-            word.wrongCount += 1
-        word.asked += 1
+        
+        while True:
+            userInput = input("Spell the word\t 'if you want to repeat press `r`'\n\n")
+            
+            if userInput.lower().strip() == "r":
+                self.processWord(word)
+                return
+            
+            if userInput.lower().strip() == word.word:
+                print(f"{bcolors.OKGREEN}{bcolors.BOLD}\nCorrect!\n{bcolors.ENDC}")
+                word.rightCount += 1
+                word.streak += 1  # Increase the streak
+            
+                break  
+            else:
+                print(f"{bcolors.FAIL}{bcolors.BOLD}\nIncorrect, try again.\n{bcolors.ENDC}")
+                print(
+                    f"{bcolors.OKGREEN}{bcolors.BOLD}\n{word.word} != {bcolors.WARNING}{userInput}\n{bcolors.ENDC}"
+                )
+                word.wrongCount += 1
+                word.streak = 0  # Reset the streak on incorrect attempt
+            
+            word.asked += 1
 
     # --------------------------------------------------------------------------------
     def addWord(self):
@@ -50,8 +58,7 @@ class Management:
             if savedWord.word == newWord.word:
 
                 print(f"{bcolors.BOLD}{bcolors.WARNING}Already Exists\n{bcolors.ENDC}")
-
-                continue
+                return
 
         self.words.append(newWord)
         self.fileMang.saveWords(self.words)
@@ -126,6 +133,7 @@ class Management:
             word.asked = 0
             word.rightCount = 0
             word.wrongCount = 0
+            word.streak = 0
         self.fileMang.saveWords(self.words)
 
 
@@ -135,7 +143,9 @@ def cmp(word1, word2):
     elif word1.getPercentage() > word2.getPercentage():
         return 1
     else:
-        if word1.asked > word2.asked:
+        if word1.streak < word2.streak:
             return -1
-        elif word1.asked <= word2.asked:
+        elif word1.streak > word2.streak:
             return 1
+        else:
+            return 0

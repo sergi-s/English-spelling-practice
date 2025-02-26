@@ -1,10 +1,11 @@
 import Colors
 class Word:
-    def __init__(self, word, rightCount=0, wrongCount=0, asked=0) -> None:
+    def __init__(self, word, rightCount=0, wrongCount=0, asked=0, streak=0) -> None:
         self.word = word.lower().strip()
         self.rightCount = rightCount
         self.wrongCount = wrongCount
         self.asked = asked
+        self.streak = streak
 
     def getPercentage(self):
         if self.asked == 0:
@@ -15,16 +16,17 @@ class Word:
     def __str__(self) -> str:
         retuStr = ""
         if self.asked > 0:
-
-            retuStr = "\n\t I asked {cyan}{:d} times{end}\t you got it {green}{:d} times right {end} and {red}{:d} times wrong \t {end}averaging of {yellow}{:.2f}% {end}".format(
+            retuStr = "\n\t I asked {cyan}{:d} times{end}\t you got it {green}{:d} times right {end} and {red}{:d} times wrong \t {end}averaging of {yellow}{:.2f}% {end} \tStreak: {blue}{:d}{end}".format(
                 self.asked,
                 self.rightCount,
                 self.wrongCount,
                 (self.rightCount / self.asked * 100),
+                self.streak,
                 cyan=Colors.bcolors.OKCYAN,
                 green=Colors.bcolors.OKGREEN,
                 red=Colors.bcolors.FAIL,
                 yellow=Colors.bcolors.WARNING,
+                blue=Colors.bcolors.OKBLUE,
                 end=Colors.bcolors.ENDC,
             )
         else:
