@@ -18,7 +18,9 @@ class FileManagement:
             return False
 
     def arryOfWordsToJson(self, words):
-        return json.dumps([word.__dict__ for word in words], indent=4)
+        return json.dumps([word.__dict__ for word in words]
+                        # , indent=4
+                          )
 
     def saveWords(self, words):
         self.writeInFile(self.arryOfWordsToJson(words), self.fileName)
@@ -35,6 +37,8 @@ class FileManagement:
                         word["rightCount"],
                         word["wrongCount"],
                         word["asked"],
+                        word["streak"],
+                        word["difficulty"],
                     )
                 )
         print("words loaded successfully")
