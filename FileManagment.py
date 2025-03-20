@@ -39,6 +39,7 @@ class FileManagement:
                         word["asked"],
                         word["streak"],
                         word["difficulty"],
+                        word["category"]
                     )
                 )
         print("words loaded successfully")

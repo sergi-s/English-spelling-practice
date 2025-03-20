@@ -5,22 +5,47 @@ from nltk.probability import FreqDist
 import Colors
 
 class Word:
-    def __init__(self, word, rightCount=0, wrongCount=0, asked=0, streak=0, difficulty=None) -> None:
+    # Define category constants
+    CATEGORY_MASTERED = "mastered"      # Words the user consistently gets right
+    CATEGORY_AVERAGE = "average"        # Words with average performance
+    CATEGORY_STRUGGLING = "struggling"  # Words the user frequently gets wrong
+    
+    def __init__(self, word, rightCount=0, wrongCount=0, asked=0, streak=0, difficulty=None, category=None) -> None:
         self.word = word.lower().strip()
         self.rightCount = rightCount
         self.wrongCount = wrongCount
         self.asked = asked
         self.streak = streak
-        print(f"difficulty: {difficulty is not None}")
-        if difficulty is not None:
-            print("I will set the difficulty")
-            self.difficulty = difficulty
-        else:
-            print("I will calculate the difficulty")
-            self.difficulty = self.calculate_difficulty()
+        
+        # Set difficulty
+        self.difficulty = difficulty if difficulty else None 
+        self.calculate_difficulty()
+            
+        # Set category
+        self.category = category if category else self.CATEGORY_AVERAGE
+        self.update_category()
     
-    # Function to calculate difficulty based on various factors
+    def update_category(self):
+        if self.asked < 3:
+            # Not enough data to categorize yet
+            self.category = self.CATEGORY_AVERAGE
+            return
+        
+        percentage = self.getPercentage()
+        
+        if percentage >= 95 and self.streak > 4:
+            self.category = self.CATEGORY_MASTERED
+        elif percentage <= 80 or (self.wrongCount > self.rightCount):
+            self.category = self.CATEGORY_STRUGGLING
+        else:
+            self.category = self.CATEGORY_AVERAGE
+    
+    # Calculate difficulty based on various factors
     def calculate_difficulty(self):
+        
+        if self.difficulty is not None:
+            return self.difficulty
+        
         difficulty = 0
         
         # Add difficulty from length of word
@@ -29,26 +54,16 @@ class Word:
         # Add difficulty from phonetic complexity
         difficulty += self.calculate_difficulty_by_phonetics()
 
-        # Add difficulty from word frequency (example placeholder for frequency calculation)
+        # Add difficulty from word frequency
         difficulty += self.calculate_difficulty_by_frequency()
 
         # Add difficulty from number of syllables
         difficulty += self.calculate_difficulty_by_syllables()
-
-        # print(f"word {self.word}")
-        # print(f"calculate_difficulty_by_length: {self.calculate_difficulty_by_length()}")
-        # print(f"calculate_difficulty_by_phonetics: {self.calculate_difficulty_by_phonetics()}")
-        # print(f"calculate_difficulty_by_frequency: {self.calculate_difficulty_by_frequency()}")
-        # print(f"calculate_difficulty_by_syllables: {self.calculate_difficulty_by_syllables()}")
-        # print(f"difficulty: {difficulty}")
         
-        # Normalize difficulty to be between 1 and 5, based on the total possible range of difficulty
+        # Normalize difficulty to be between 1 and 5
         max_possible_difficulty = 4 + 4 + 4 + 3  # maximum possible scores for each factor
         normalized_difficulty = (difficulty / max_possible_difficulty) * 5
-        
-        print(f"difficulty: {normalized_difficulty}")
-        # Normalize difficulty to be between 1 and 5
-        return normalized_difficulty # min(max(difficulty // 2, 1), 5)
+        self.difficulty = normalized_difficulty
 
     # Difficulty based on length of word
     def calculate_difficulty_by_length(self):
@@ -69,13 +84,13 @@ class Word:
             return 4  # Harder
         return 2  # Easier
 
-    # Difficulty based on frequency (for simplicity, assume more common words are easier)
-    def calculate_difficulty_by_frequency(word):
+    # Difficulty based on frequency
+    def calculate_difficulty_by_frequency(self):
         word_list = corpus_words.words()
         frequency = FreqDist(word_list)
-        if word not in frequency:
+        if self.word not in frequency:
             return 4  # Word is rare or unknown, hence difficult
-        word_freq = frequency[word]
+        word_freq = frequency[self.word]
         if word_freq > 100:
             return 1  # Common word
         elif word_freq > 50:
@@ -104,25 +119,30 @@ class Word:
         # Weight the performance considering the streak and difficulty of the word
         streak_bonus = self.streak * 0.05  # 5% bonus for each correct streak
         difficulty_factor = 1 + (self.difficulty - 1) * 0.1  # Increase performance based on difficulty
-        weighted_performance = self.getPercentage() * streak_bonus * difficulty_factor
-        print(f"cmp: {self.word}: {min(weighted_performance, 100):.2f}% performance, Streak: {self.streak}")
+        
+        # Add category factor - struggling words get lower performance (making them more likely to be selected)
+        category_factor = 0.7 if self.category == self.CATEGORY_STRUGGLING else 1.0
+        category_factor = 1.2 if self.category == self.CATEGORY_MASTERED else category_factor
+        
+        weighted_performance = self.getPercentage() * streak_bonus * difficulty_factor * category_factor
         return min(weighted_performance, 100)  # Cap it at 100%
-
     
     def __str__(self) -> str:
         retuStr = ""
         if self.asked > 0:
-            retuStr = "\n\t I asked {cyan}{:d} times{end}\t you got it {green}{:d} times right {end} and {red}{:d} times wrong \t {end}averaging of {yellow}{:.2f}% {end} \tStreak: {blue}{:d}{end}".format(
+            retuStr = "\n\t I asked {cyan}{:d} times{end}\t you got it {green}{:d} times right {end} and {red}{:d} times wrong \t {end}averaging of {yellow}{:.2f}% {end} \tStreak: {blue}{:d}{end} \tCategory: {purple}{}{end}".format(
                 self.asked,
                 self.rightCount,
                 self.wrongCount,
                 (self.rightCount / self.asked * 100),
                 self.streak,
+                self.category,
                 cyan=Colors.bcolors.OKCYAN,
                 green=Colors.bcolors.OKGREEN,
                 red=Colors.bcolors.FAIL,
                 yellow=Colors.bcolors.WARNING,
                 blue=Colors.bcolors.OKBLUE,
+                purple=Colors.bcolors.HEADER,
                 end=Colors.bcolors.ENDC,
             )
         else:
@@ -131,7 +151,19 @@ class Word:
         return "Word: " + self.word + retuStr
     
     def cmp(word1, word2):
-        # Compare based on weighted performance first, then on streak
+        # Prioritize struggling words
+        if word1.category == Word.CATEGORY_STRUGGLING and word2.category != Word.CATEGORY_STRUGGLING:
+            return -1
+        elif word1.category != Word.CATEGORY_STRUGGLING and word2.category == Word.CATEGORY_STRUGGLING:
+            return 1
+        
+        # De-prioritize mastered words 
+        if word1.category == Word.CATEGORY_MASTERED and word2.category != Word.CATEGORY_MASTERED:
+            return 1
+        elif word1.category != Word.CATEGORY_MASTERED and word2.category == Word.CATEGORY_MASTERED:
+            return -1
+            
+        # Compare based on weighted performance if categories are the same
         if word1.getWeightedPerformance() < word2.getWeightedPerformance():
             return -1
         elif word1.getWeightedPerformance() > word2.getWeightedPerformance():
