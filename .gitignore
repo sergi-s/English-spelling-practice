@@ -12,3 +12,8 @@ audio
 
 myenv
 .env
+data/*
+!.gitkeep
+
+__MACOSX
+.DS_Store
