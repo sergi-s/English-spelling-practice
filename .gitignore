@@ -11,3 +11,4 @@ audio
 *.json
 
 myenv
+.env

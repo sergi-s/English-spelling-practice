@@ -5,7 +5,7 @@ from Word import Word
 
 class FileManagement:
     def __init__(self, fileName="sample.json") -> None:
-        self.fileName = fileName
+        self.fileName = f"data/{fileName}"
         
     def writeInFile(self, data, fileName):
         try:

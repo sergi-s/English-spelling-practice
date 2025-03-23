@@ -17,7 +17,7 @@ class Management:
 
     def __init__(self, fileName="sample.json", language="en") -> None:
         self.exit_flag = False
-        self.fileName = fileName
+        self.fileName = f"data/{fileName}"
         self.fileMang = FileManagement()
         self.language = language
         self.soundEngine = PYTTS()
@@ -173,8 +173,8 @@ class Management:
         self.mainSystemLoop()
 
     def resetScore(self):
-        archive_name = f"Archive-{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json"
-        os.rename("sample.json", archive_name)
+        archive_name = f"data/Archive-{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json"
+        os.rename("data/sample.json", archive_name)
         for word in self.words:
             word.asked = word.rightCount = word.wrongCount = word.streak = 0
             word.category = Word.CATEGORY_AVERAGE
